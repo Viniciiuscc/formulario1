@@ -1,6 +1,6 @@
 function addForm(){
     document.getElementById("resultado").innerHTML = ""
-    var spam = document.createElement("spam")
+    var span = document.createElement("span")
 
     var inputName = document.getElementById('formName')
     var name = inputName.value
@@ -13,12 +13,15 @@ function addForm(){
 
     var inputBio = document.getElementById('formBio')
     var bio = inputBio.value
+
+    var inputFile = document.getElementById("formFile")
+    var foto = window.URL.createObjectURL(inputFile.files[0])
     
     console.log(name, city, state, bio)
 
-    spam.innerHTML = `<p>Nome: ${name}.</p> <p>Cidade: ${city + state}</p> <p>Biografia: ${bio}</p>` 
+    span.innerHTML = `<p>Foto: <img src="${foto}" /></p> <p>Nome: ${name}.</p> <p>Cidade: ${city + state}</p> <p>Biografia: ${bio}</p>` 
 
-    document.getElementById("resultado").appendChild(spam)
+    document.getElementById("resultado").appendChild(span)
         
     
     inputName.value = inputCity.value = inputBio.value = inputState.value = ''
