@@ -1,0 +1,16 @@
+#formFoto{
+    display: none;
+}
+
+.picture {
+    width: 354px;
+    height: 472px;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    border: 2px dashed currentColor;
+    cursor: pointer;
+    font-family: serif;
+}
