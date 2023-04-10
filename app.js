@@ -22,9 +22,10 @@ function addForm(){
     
     console.log(name, city, state, bio, age)
    
-    span.innerHTML = `<p> Foto: <img class="foto" src="${foto}" /></p> <p>Nome: ${name}.</p> <p>Cidade: ${city + state}</p> <p>Biografia: ${bio}</p> <p>Idade: ${age}</p>`
+    span.innerHTML = `<p><img class="foto" src="${foto}" /></p> <p>Nome: ${name}.</p> <p>Cidade: ${city + state}</p> <p>Biografia: ${bio}</p> <p>Idade: ${age}</p>`
     document.getElementById("resultado").appendChild(span)
             
-    inputName.value = inputCity.value = inputBio.value = inputState.value = inputFile.value = inputAge.value = ''   
+    inputName.value = inputCity.value = inputBio.value = inputState.value = inputAge.value = ''   
 }
+
 
