@@ -5,6 +5,9 @@ function addForm(){
     var inputName = document.getElementById('formName')
     var name = inputName.value
 
+    var inputAge = document.getElementById('formAge')
+    var age = inputAge.value
+
     var inputCity = document.getElementById('iformCity') 
     var city = inputCity.value
 
@@ -17,10 +20,9 @@ function addForm(){
     var inputFile = document.getElementById("formFile")
     var foto = window.URL.createObjectURL(inputFile.files[0])
     
-    console.log(name, city, state, bio)
-
-    span.innerHTML = `<p>Foto: <img src="${foto}" /></p> <p>Nome: ${name}.</p> <p>Cidade: ${city + state}</p> <p>Biografia: ${bio}</p>` 
-
+    console.log(name, city, state, bio, age)
+   
+    span.innerHTML = `<p>Foto: <img src="${foto}" /></p> <p>Nome: ${name}.</p> <p>Cidade: ${city + state}</p> <p>Biografia: ${bio}</p> <p>Idade: ${age}</p>`
     document.getElementById("resultado").appendChild(span)
         
     
