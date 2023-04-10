@@ -24,8 +24,6 @@ function addForm(){
    
     span.innerHTML = `<p>Foto: <img src="${foto}" /></p> <p>Nome: ${name}.</p> <p>Cidade: ${city + state}</p> <p>Biografia: ${bio}</p> <p>Idade: ${age}</p>`
     document.getElementById("resultado").appendChild(span)
-        
-    
-    inputName.value = inputCity.value = inputBio.value = inputState.value = ''
-    
+            
+    inputName.value = inputCity.value = inputBio.value = inputState.value = ''   
 }
